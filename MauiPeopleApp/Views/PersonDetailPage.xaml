@@ -4,8 +4,8 @@
              x:Class="MauiPeopleApp.Views.PersonDetailPage"
              Title="Person Details">
     <StackLayout Padding="20" Spacing="10">
-        <Image Source="{Binding Person.avatar}" WidthRequest="120" HeightRequest="120" Aspect="AspectFill" HorizontalOptions="Center" />
-        <Label Text="{Binding Person.fulName}" FontAttributes="Bold" FontSize="24" HorizontalOptions="Center"/>
-        <Label Text="{Binding Person.email}" FontSize="16" HorizontalOptions="Center"/>
+        <Image Source="{Binding Avatar}" WidthRequest="120" HeightRequest="120" Aspect="AspectFill" HorizontalOptions="Center" />
+        <Label Text="{Binding FullName}" FontAttributes="Bold" FontSize="24" HorizontalOptions="Center"/>
+        <Label Text="{Binding Email}" FontSize="16" HorizontalOptions="Center"/>
     </StackLayout>
 </ContentPage>
