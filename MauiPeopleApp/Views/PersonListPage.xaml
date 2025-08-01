@@ -7,10 +7,10 @@
         <CollectionView.ItemTemplate>
             <DataTemplate>
                 <Grid Padding="10" ColumnDefinitions="60,*,Auto" RowDefinitions="Auto">
-                    <Image Source="{Binding avata}" WidthRequest="50" HeightRequest="50" Aspect="AspectFill" />
+                    <Image Source="{Binding Avatar}" WidthRequest="50" HeightRequest="50" Aspect="AspectFill" />
                     <VerticalStackLayout Grid.Column="1" Margin="10,0">
-                        <Label Text="{Binding fulName}" FontAttributes="Bold" />
-                        <Label Text="{Binding email}" FontSize="Small" TextColor="Gray" />
+                        <Label Text="{Binding FullName}" FontAttributes="Bold" />
+                        <Label Text="{Binding Email}" FontSize="Small" TextColor="Gray" />
                     </VerticalStackLayout>
                 </Grid>
             </DataTemplate>

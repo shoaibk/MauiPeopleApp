@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:MauiPeopleApp.ViewModels"
+             x:Class="MauiPeopleApp.Views.MainPage">
+             
+
+    <ContentPage.BindingContext>
+        <viewmodels:MainViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout Padding="20" VerticalOptions="Center" Spacing="20">
+        <Label Text="Fingerprint Login Demo" 
+               FontSize="24" 
+               HorizontalOptions="Center" />
+
+        <Button Text="Login with Fingerprint" 
+                Command="{Binding LoginWithFingerprintCommand}" />
+    </StackLayout>
+
+</ContentPage>
