@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiPeopleApp.Views.LoginPage"
+             Title="Authentication">
+    <StackLayout Padding="40" Spacing="20" VerticalOptions="Center">
+        <Label Text="Welcome" FontSize="32" HorizontalOptions="Center"/>
+        <Label Text="Please authenticate using biometrics" FontSize="16" HorizontalOptions="Center"/>
+        <Button Text="Login with Fingerprint" Clicked="OnLoginClicked"/>
+    </StackLayout>
+</ContentPage>

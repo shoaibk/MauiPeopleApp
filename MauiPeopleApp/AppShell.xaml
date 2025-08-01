@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:views="clr-namespace:MauiPeopleApp.Views"
        x:Class="MauiPeopleApp.AppShell">
-    <ShellContent Title="People" ContentTemplate="{DataTemplate views:PersonDetailPage}" />
+
+    <!-- Start with Login Page -->
+    <ShellContent Title="Login" ContentTemplate="{DataTemplate views:LoginPage}" Route="LoginPage" />
+
+    <!-- Register other pages as routes -->
+    <ShellContent Title="People" ContentTemplate="{DataTemplate views:PersonListPage}" Route="PersonListPage" IsVisible="False" />
+
 </Shell>
